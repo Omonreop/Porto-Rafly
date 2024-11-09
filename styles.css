@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif; /* Menggunakan font modern */
+  background-color: #f4f4f4; /* Latar belakang lebih cerah */
+}
+
+/* Jumbotron */
+.jumbotron {
+  position: relative;
+  background-color: #495057;
+  color: #fff; /* Warna teks putih */
+  display: flex; /* Menggunakan flexbox untuk pusat konten */
+  align-items: center; /* Vertikal center */
+  justify-content: center; /* Horizontal center */
+  padding: 5rem;
+}
+
+.jumbotron h1 {
+  font-size: 3.5rem; /* Ukuran font lebih besar */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Bayangan teks untuk efek 3D */
+  animation: fadeInDown 1s ease; /* Animasi masuk */
+}
+
+.jumbotron p {
+  font-size: 1.25rem; /* Ukuran font untuk deskripsi */
+  margin-bottom: 1.5rem; /* Jarak bawah untuk spasi */
+  animation: fadeInUp 1s ease; /* Animasi masuk */
+}
+
+.jumbotron::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* Menempatkan border di bawah */
+  left: 0;
+  right: 0;
+  height: 20px; /* Tinggi border */
+  background: #fff; /* Warna putih */
+  border-top: 5px solid #343a40; /* Border atas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+/* About Section */
+.about-section {
+  background-color: #ffffff; /* Latar belakang putih */
+  padding: 5rem 0; /* Padding untuk section */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk kedalaman */
+}
+
+/* Judul About */
+.about-title {
+  font-family: "Playfair Display", serif; /* Font untuk judul */
+  font-size: 2.5rem; /* Ukuran font untuk judul */
+  color: #495057; /* Warna judul */
+  margin-bottom: 2rem; /* Jarak bawah untuk spasi */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+  letter-spacing: 1px; /* Jarak antar huruf */
+}
+
+/* Card Styles */
+.card {
+  border-radius: 1rem; /* Sudut yang lebih halus */
+  overflow: hidden; /* Menghindari gambar keluar dari batas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk card */
+  border: none; /* Menghapus border default */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk card */
+  background-color: #f8f9fa; /* Warna latar belakang card */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efek angkat saat dihover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih gelap saat dihover */
+}
+
+/* Teks dalam Card */
+.card-title {
+  color: #495057; /* Warna teks untuk judul dalam card */
+  font-weight: bold; /* Membuat judul lebih menonjol */
+  font-size: 1.5rem; /* Ukuran font untuk judul card */
+}
+
+.card-text {
+  color: #6c757d; /* Warna teks untuk deskripsi dalam card */
+  line-height: 1.6; /* Jarak antar baris untuk keterbacaan */
+  margin-top: 0.5rem; /* Jarak atas untuk spasi */
+}
+
+/* Deskripsi Diri */
+.fs-5 {
+  color: #495057; /* Warna teks untuk deskripsi diri */
+  margin-bottom: 1rem; /* Jarak bawah untuk spasi */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem; /* Ukuran font lebih kecil untuk perangkat kecil */
+  }
+}
+/* Projects Section */
+#projects {
+  background-color: #495057; /* Latar belakang gelap untuk bagian proyek */
+  color: white; /* Warna teks putih untuk kontras yang lebih baik */
+  padding: 5rem 0; /* Padding atas dan bawah untuk bagian Projects */
+}
+
+/* Carousel Styles */
+.carousel-inner img {
+  width: 100%; /* Memastikan gambar mengambil lebar penuh dari card */
+  height: auto; /* Menjaga rasio aspek gambar */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Warna ikon kontrol */
+  border-radius: 50%; /* Membuat ikon kontrol berbentuk bulat */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1); /* Membuat ikon kontrol berwarna putih */
+}
+
+/* Optional: Styling for the card body */
+.card-body {
+  padding: 1.5rem; /* Padding untuk card body */
+}
+
+/* Optional: Adjusting the text color for better visibility */
+.card-title {
+  color: #495057; /* Warna teks untuk judul */
+}
+
+.card-text {
+  color: #6c757d; /* Warna teks untuk deskripsi */
+}
+
+/* Footer */
+.footer {
+  background-color: #495057; /* Latar belakang untuk footer */
+  color: white; /* Warna teks footer */
+}
+
+/* Section Styles */
+section {
+  padding-top: 5rem; /* Padding atas untuk semua section */
+}
+
+/* Card Styles */
+.card {
+  border-radius: 0.5rem; /* Sudut yang lebih halus */
+  overflow: hidden; /* Menghindari gambar keluar dari batas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk card */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efek zoom saat dihover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan saat dihover */
+}
+
+.card-body {
+  padding: 1.5rem; /* Padding untuk card */
+}
+
+/* List Styles */
+.list-unstyled {
+  padding-left: 0; /* Menghapus padding kiri untuk list */
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #0d6efd; /* Warna tombol */
+  border: none; /* Menghapus border */
+  border-radius: 0.5rem; /* Sudut yang lebih halus */
+}
+
+.btn-primary:hover {
+  background-color: #6610f2; /* Warna tombol saat hover */
+}
+/* Carousel Control Icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #007bff; /* Warna ikon kontrol */
+  border-radius: 50%; /* Membuat ikon kontrol berbentuk bulat */
+}
